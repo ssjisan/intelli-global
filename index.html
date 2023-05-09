@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta name="description" content="Intelli Global Services" />
+    <meta name="author" content="Intelli Global Services" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Intelli Global Services</title>
+    <!-- Linked Styles Start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Linked Styles End -->
+  </head>
+
+  <body>
+    <div>
+      <div class="waves"></div>
+      <div class="main-container" id="scaling">
+        <div class="logo">
+          <img src="./img/logo.png" alt="Intelli Global" />
+        </div>
+        <div class="info-box">
+          <h1>INTELLI</h1>
+          <hr style="width: 75%; color: white" />
+          <h4>Global Services</h4>
+          <p>
+            Defining 'Excellence' connecting the right dots, locking horns
+            against time, exploring into the future of techology with limitless
+            possibilities.
+          </p>
+        </div>
+        <div class="company-groups">
+          <a href="https://intellidigital.com/" target="_blank" class="link">
+            <div class="company-card tilt">
+              <div class="logo-name">
+                <img src="./img/digital-card.png" alt="" />
+                <h5>
+                  INTELLI <br />
+                  <span class="span-texts">Digital</span>
+                </h5>
+              </div>
+              <img src="./img/arrow.png" class="arrow" />
+            </div>
+          </a>
+          <a href="https://intellidigital.com/" target="_blank" class="link">
+            <div class="company-card tilt">
+              <div class="logo-name">
+                <img src="./img/application-card.png" alt="" />
+                <h5>
+                  INTELLI <br />
+                  <span class="span-texts">Apps</span>
+                </h5>
+              </div>
+              <img src="./img/arrow.png" class="arrow" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Scriptes Start-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/tilt.jquery.js"></script>
+  <script>
+    const tilt = $(".tilt").tilt({
+      maxTilt: 15,
+    });
+    tilt.on("change", callback);
+    tilt.on("tilt.mouseLeave", callback);
+    tilt.on("tilt.mouseEnter", callback);
+  </script>
+  <script>
+    x = document.getElementById("scaling");
+    var w = window.innerWidth;
+    var y = window.innerHeight;
+    function scaleing() {
+      x.style.transform = "scale(1.3)";
+      x.style.height = "100vh";
+      x.style.position = "fixed";
+      x.style.marginTop = "-240px";
+      x.style.width = "100%";
+    }
+    if (w > "1920") {
+      scaleing();
+    }
+  </script>
+  <!-- Scriptes End-->
+</html>
